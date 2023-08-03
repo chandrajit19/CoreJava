@@ -1,0 +1,23 @@
+class Parent
+{
+	int i;
+}
+ class Child extends Parent
+ {
+	 int i;
+	 void setData(int a, int b)
+	 {
+		 super.i=a;
+		 i=b;
+		 System.out.println("Value of i of parent class = " +super.i);
+		 System.out.println("Value of i of child class = " +i);
+     }
+ }
+ class Test
+ {
+ 	public static void main(String[] args) 
+	{
+		Child s=new Child();
+		s.setData(10, 20);
+	}
+}

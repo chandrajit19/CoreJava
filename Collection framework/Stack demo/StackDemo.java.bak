@@ -1,0 +1,24 @@
+import java.util.*;
+class StackDemo 
+{
+	public static void main(String[] args) 
+	{
+		Stack s=new Stack();
+		s.add("aplle");
+		s.add("mango");
+		s.add("banana");
+		s.add("orange");
+		System.out.println(s);
+        s.push("apple");       // add value
+	    System.out.println(s);
+		System.out.println(s.pop());  // remove most top value
+		 System.out.println(s);
+		System.out.println(s.peek());  // return most top value
+		 System.out.println(s);
+		System.out.println(s.search("banana"));  // give index of value
+		System.out.println(s.empty());
+		System.out.println(s.pop()); 
+		System.out.println(s);
+
+	}
+}

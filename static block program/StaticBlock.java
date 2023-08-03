@@ -1,0 +1,26 @@
+  class  Demo
+{  
+	
+	{
+       System.out.println("Non static block-1");
+   }
+	 
+   static	{
+		      System.out.println("Static block");
+	        }
+
+			Demo()
+	          {
+				System.out.println("default constructor is called");
+	          }
+
+
+}
+  class StaticBlock
+{
+	public static void main(String[] args)
+	{
+        Demo d1=new Demo(); 
+		Demo d2=new Demo();
+	}
+}

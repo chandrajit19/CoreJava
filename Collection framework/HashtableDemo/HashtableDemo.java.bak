@@ -1,0 +1,14 @@
+import java.util.*;
+class HashtableDemo
+{
+	public static void main(String args[])
+	{
+		Hashtable t=new Hashtable();
+		t.put(5, "orange");
+		t.put(1, "apple");
+		t.put(10,"papaya");
+		t.put(2, "guava");
+		t.put(13, "grapes");
+		System.out.println(t);
+	}
+}

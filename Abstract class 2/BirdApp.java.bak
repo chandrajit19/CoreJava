@@ -1,0 +1,55 @@
+abstract class Bird
+{
+	void breath()
+	{
+		System.out.println("Bird is breathing ");
+	}
+
+    abstract void eat();
+}
+
+class Sparrow extends Bird
+{
+	void eat()
+	{
+		System.out.println("Sparrow eats insects");
+	}
+}
+
+abstract class Eagle extends Bird
+{
+  abstract	void eat();
+}
+
+class SurpentEagle extends Eagle
+{
+	void eat()
+	{
+	 System.out.println("SurpentEagle eats snake");
+	}
+}
+
+class GoldenEagle extends Eagle
+{  
+	void eat()
+	{
+	System.out.println("GoldenEagle eats snake");
+	}
+}
+
+class BirdApp
+{
+	public static void main(String args[])
+	{
+		Sparrow s=new Sparrow();
+		        s.eat();
+				s.breath();
+        SurpentEagle se=new SurpentEagle();
+		        se.eat();
+				se.breath();
+		GoldenEagle ge=new GoldenEagle();
+		        ge.eat();
+				ge.breath();
+	}
+
+}

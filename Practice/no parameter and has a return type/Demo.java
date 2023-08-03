@@ -1,0 +1,20 @@
+// no parameter and has a return type
+
+class Addition
+{
+       int add()
+	{
+          int a=10, b=20, c=(a+b);
+		  return c;
+	}
+}
+class Demo
+{
+	public static void main(String args[])
+	{
+		Addition a=new Addition();
+	       int d=a.add();                     // a.add=c
+	    System.out.println(d);
+	    System.out.println(a.add());  // it is a fast method
+	}
+}

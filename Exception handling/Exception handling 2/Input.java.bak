@@ -1,0 +1,23 @@
+import java.util.*;
+class Input
+{
+	public static void main(String[] args) 
+	{   Scanner s=new Scanner(System.in);
+		System.out.println("Enter first number = ");
+		float a=s.nextFloat();
+        System.out.println("Enter fsecond number = ");
+		float b=s.nextFloat();
+
+		try
+		{
+			double c=a/b;
+			System.out.println("output is = " +c);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Exeption is caught ");
+		}
+		
+		System.out.println("main is terminated normally");
+	}
+}

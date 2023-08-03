@@ -1,0 +1,19 @@
+class Student
+{
+	int age;
+	String name;
+
+	Student(String name, int age)
+	{
+		this.name=name;
+		this.age=age;
+	}
+}
+class Demo
+{
+	public static void main(String args[])
+	{
+		Student s=new Student("ram", 30);
+		System.out.println("Name = "+s.name+ ",  Age = "+s.age);
+	}
+}

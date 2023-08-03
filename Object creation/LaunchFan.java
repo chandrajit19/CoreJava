@@ -1,0 +1,34 @@
+//Object creation
+/* class Fan
+{
+	String color;
+	int cost;
+	
+}
+
+class LaunchFan
+{
+	public static void main(String args[])
+	{
+		Fan s1=new Fan();
+	    s1.color="blue";
+		s1.cost=123;
+    	System.out.println("color is = " + s1.color + " & cost is =  " + s1.cost);
+		
+	}
+}*/
+class Fan
+{
+	String color="black";
+	float cost=23.2f;
+	
+}
+class LaunchFan
+{
+	public static void main(String args[])
+	{
+		Fan s2=new Fan();
+		System.out.println(s2.color);
+		System.out.println(s2.cost);
+	}
+}

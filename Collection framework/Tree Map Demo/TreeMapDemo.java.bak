@@ -1,0 +1,16 @@
+import java.util.*;
+class TreeMapDemo
+{
+	public static void main(String[] args) 
+	{
+		TreeMap t=new TreeMap();
+		t.put(105 , "ram ");
+		t.put( 104, "seeta ");
+		t.put( 106, "ajay ");
+		t.put(101 , " paro");
+		t.put(104 , "radha");
+		t.put( 104, "ram");
+		t.put(107 , null);
+		System.out.println(t);
+	}
+}

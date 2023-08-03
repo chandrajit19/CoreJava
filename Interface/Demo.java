@@ -1,0 +1,28 @@
+// An example of Interface
+interface Compute
+{
+	void add();
+	void sub();
+}
+
+class Computation implements Compute
+{
+	public void add()
+	{
+		System.out.println("Add");
+	}
+	public void sub()
+	{
+		System.out.println("Sub");
+	}
+
+}
+class Demo
+{
+	public static void main(String args[])
+	{
+		Computation c=new Computation();
+		            c.add();
+					c.sub();
+	}
+}

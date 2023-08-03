@@ -1,0 +1,16 @@
+import java.util.*;
+class LinkedHashMapDemo 
+{
+	public static void main(String[] args) 
+	{
+		HashMap h=new HashMap();
+		        h.put(101 , "orange");
+				h.put(102 , "apple");
+				h.put(106 , null);
+				h.put(103 , "mango");
+				h.put(104 , "banana");
+				h.put(105 , null);
+				h.put(107 , "banana");
+				System.out.println(h);
+	}
+}

@@ -1,0 +1,67 @@
+import java.util.*;
+abstract class Shape    // abstract class
+{
+	int area;
+	abstract void input();
+	abstract void area();
+	void display() // concrete method
+	{
+		System.out.println("Area is = " +area);
+	}
+	Scanner s=new Scanner(System.in);
+}
+
+class Rectangle extends Shape
+{ 
+	int l,b;
+    void input()
+	{
+		System.out.println("Enter length and breadth of rectangle = ");
+		l=s.nextInt();
+		b=s.nextInt();
+	}
+	void area()
+	{
+		area=(l*b);
+		
+	}
+
+}
+
+class Square extends Shape
+{
+	int l;
+	void input()
+	{
+		System.out.println("Enter the length of square = ");
+		l=s.nextInt();
+	}
+
+	void area()
+	{
+		area=(l*l);
+	}
+
+}
+
+class Geometry
+{
+	void allowShapes(Shape ref)  // ref is a reference variable of Shape type of class and it needs reference value
+	{
+		ref.input();
+		ref.area();
+		ref.display();
+	}
+}
+class ShapeApp
+{
+	public static void main(String args[])
+	{
+		Rectangle r= new Rectangle();
+		Square  s=new Square();
+		Geometry g=new Geometry();
+		g.allowShapes(r);
+		g.allowShapes(s);
+			
+	}
+}

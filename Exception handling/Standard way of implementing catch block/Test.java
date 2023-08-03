@@ -1,0 +1,33 @@
+class Demo 
+{
+	void fun1()
+	{
+		System.out.println("Inside the fun1");
+		fun2();
+	}
+
+
+   void fun2()
+	{
+	  System.out.println("Inside the fin2");
+	  int c=20/0;
+	}
+}
+class Test
+{
+	public static void main(String args[])
+	{
+		Demo d=new Demo();
+		 try
+		 {
+			d.fun1();
+		 }
+		 catch (Exception e)
+		 {  
+			 System.out.println(e.getMessage());
+			 e.printStackTrace();
+			 System.out.println(e);
+		 }
+		System.out.println("Main is terminated normally");	 
+	}
+}

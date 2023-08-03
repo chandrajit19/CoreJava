@@ -1,0 +1,51 @@
+// Runtime / dynamic/ true polymorphism 
+class Animal
+{
+	void eat()
+	{
+		System.out.println("Animal is eating ");
+	}
+	void sleep()
+	{
+		System.out.println("Animal is Sleeping ");
+	}
+}
+
+class Tiger extends Animal
+{
+   void eat()
+	{
+		System.out.println("Tiger hunts and eat ");
+	}
+}
+
+class Monkey extends Animal
+{
+	void eat()
+	{
+		System.out.println("monkey steals and eat ");
+	}
+}
+
+class Forest
+{
+	void allowAnimal(Animal ref)
+	{
+		ref.eat();
+		ref.sleep();
+	}
+}
+
+class Main
+{ 
+	  public static void main(String args[])
+	{
+		  Tiger t=new Tiger();
+		  Monkey m=new Monkey();
+		  Forest f=new Forest();
+		  f.allowAnimal(t);   // Tiger hunts and eat &  Animal is Sleeping
+		  f.allowAnimal(m);  //   monkey steals and eat & Animal is Sleeping
+		  
+	}
+
+}
